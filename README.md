@@ -1,1 +1,1 @@
-#This is sample by Geunsoo
+#This is sample by Geunsoo Park
