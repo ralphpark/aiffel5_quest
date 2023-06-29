@@ -1,14 +1,1 @@
-
-def deco(fn) :
-    def wrapper():
-        print('*'*20)
-        fn()
-        print('*'*20)
-    return wrapper
-
-@deco
-def hi():
-    print("hi")
-
-
-print(hi())
+# 파이썬 리스트 이용해서 미로찾기 코드 짜줘
