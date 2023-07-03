@@ -1,10 +1,11 @@
-# 복습퀴즈. closure를 직접 구현해봅시다. # [[YOUR CODE]]에 들어가야할 코드는 무엇일까요? 
+# 정수가 아닌 값을 입력해서 예외 처리를 잘 하는지 확인해 보세요.
+num = input('정수를 입력하세요 : ')  # int() 함수 제거
 
-def int_plus(n):
-    def plus(x):
-        return n + x
-    return plus
+# 입력값이 정수일 때만
+# Q. 아래의 빈 코드를 채워보세요.
+if num.isdigit():
+    print(f'입력한 정수는 {num}입니다.')
 
-# 결과 확인
-closure_plus = int_plus(2)
-print(closure_plus(3))
+# 입력값이 정수가 아닐 때
+else:
+    print('정수가 아닙니다.')
