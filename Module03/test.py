@@ -1,9 +1,11 @@
+# Q. 감사했던 사람을 떠올리며 '사람', '감사한 내용'의 칼럼을 갖고 있는 데이터프레임을 만들어보고, 
+# csv 파일로 저장해주세요.
+# 데이터는 3개 이상 입력해주세요.
+
 import pandas as pd
-
-data = {'메뉴':['후라이드', '양념치킨', '간장치킨','마늘치킨','파닭','닭강정','양반후반'], '가격':[12000,13000,14000,14000,14000,15000,13000],'호수':['10호','9호','8호','7호','6호','5호','4호'],'칼로리':[100,200,300,400,500,600,700]}
-
-df = pd.DataFrame(data)
-df.to_csv('modudak.csv', index=False)
-
-df = df.set_index(keys=['메뉴'])
+human_list = ['엄마', '아버지', '와이프']
+thanks_list = ['항상 고맙고 사랑해', '고맙고 사랑해', '고맙고 사랑해']
+df = pd.D
+ataFrame({'human': human_list, 'thanks': thanks_list})
+df.to_csv('thanks.csv', index=False)
 print(df)
