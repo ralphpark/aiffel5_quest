@@ -54,3 +54,16 @@
 평가용 데이터는 레이블이 없다  
 
 ![img_2.png](img_2.png)
+
+train data(검증용 데이터)를 다시 train data(학습용 데이터)와 validation data(검증용 데이터)로 나눈다.  
+![img_3.png](img_3.png)  
+모델이 잘 만들어졌는지 검증하기 위해 레이블이 있는 데이터를 검증용 데이터로 사용한다. (7:3 or 8:2)  
+
+모델선택  
+![img_4.png](img_4.png)  
+
+![img_5.png](img_5.png)  
+test data(평가용 데이터)를 가지고 예측을 하게 된다.  
+
+5. 머신러닝에서 자주 사용하는 용어  
+![img_6.png](img_6.png)  
