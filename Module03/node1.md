@@ -20,7 +20,7 @@
 
 3. 과소적합 / 과대적합
 
-![](https://github.com/ralphpark/aiffel5_quest/blob/24a4869fcb6da6e0ebd834a4f10ca7fafb83ea6a/Module03/ml_1.png?raw=true)
+![img_1.png](img_1.png)
 과소적합(Underfitting)은 모델이 학습 데이터와 테스트 데이터에서 모두 낮은 성능을 보이며, 데이터의 패턴을 충분히 학습하지 못한 상태를 의미합니다. 과대적합(Overfitting)은 모델이 학습 데이터에 지나치게 적응해 테스트 데이터에서 낮은 성능을 보이는 상태로, 일반화 능력이 떨어지는 현상을 의미합니다.  
 
 4. 머신러닝 프로세스  
