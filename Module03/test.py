@@ -1,22 +1,26 @@
-import pandas as pd
 import numpy as np
-data = pd.DataFrame({
-    '메뉴': ['[인기]아이펠치킨','닭강정','간장치킨','마늘치킨','파닭','승일양념치킨','양념반후라이드반','황금후라이드','[베스트]풀잎치킨'],
-    '가격': [16000,15000,14000,14000,14000,13000,13000,12000,9900],
-    '호수' : [11,12,9,9,11,10,10,10,10],
-    '칼로리' : [1200.0,1500.0,1600.0,1800.0,1300.0,1400.0,1300.0,1000.0,1000.0],
-    '할인율' : [0.5,0.2,0.2,0.2,0.2,0.2,0.2,0.2,np.nan],
-    '할인가' : [8000.0,12000.0,11200.0,11200.0,11200.0,10400.0,10400.0,9600.0,np.nan],
-    '원산지' : ['국내산','브라질','국내산','국내산','브라질','국내산','국내산','국내산','국내산'],
-    '살찔까요' : ['no','yes','yes','yes','yes','yes','yes','no','no'],
-    '고민' : ['무조건먹자','먹지말자','먹지말자','먹지말자','먹지말자','먹지말자','먹지말자','무조건먹자','무조건먹자']
-})
-data.to_csv('final_modudak.csv', index=False)
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import accuracy_score
 
+# 주어진 데이터와 라벨을 생성하세요.
+# X_train, X_test, y_train, y_test = ...
 
-data.loc [2,'원산지'] = '미국산'
-df = data[['가격','호수','칼로리','원산지','살찔까요']].copy()
-df.info()
+param_grid = {
+    'criterion': ['entropy'],
+    'max_depth': np.arange(1, 20),           # 같이 변경할 수 있는 범위 설정
+    'min_samples_split': np.arange(2, 12),   # 같이 변경할 수 있는 범위 설정
+    'min_samples_leaf': np.arange(1, 10)     # 같이 변경할 수 있는 범위 설정
+}
 
-#레이블 인코딩
-from sklearn.preprocessing import LabelEncoder
+model = DecisionTreeClassifier(random_state=0)
+grid_search = GridSearchCV(estimator=model, param_grid=param_grid, scoring='accuracy', n_jobs=-1, cv=5)
+grid_search.fit(X_train, y_train)
+
+best_params = grid_search.best_params_
+best_model = grid_search.best_estimator_
+
+print("최적 하이퍼파라미터:", best_params)
+
+pred = best_model.predict(X_test)
+print("최적 모델의 정확도:", accuracy_score(y_test, pred))
