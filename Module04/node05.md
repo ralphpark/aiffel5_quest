@@ -72,6 +72,8 @@ Hugging Face를 이용한 GPT 모델 실습
 - (포즈, 실제 이미지) pair가 생겼다.
 - 원래는 보이지 않는 데이터였지만 pose 데이터와 실제 이미지 data를 합성해서 paired data를 만들어 냈다.
 
+![](./img/dance_02.png)
+
 Q. Everybody Dance now로 paired data를 도출하는 방법을 설명해 보세요.
 - 일반인의 영상으로부터 포즈 정보를 뽑아냅니다. (포즈 정보는 오픈 코드를 이용해 supervised learning 방식으로 쉽게 만들 수 있습니다.)
 만들어진 포즈 정보 혹은 스켈레톤 정보로부터 Generator가 영상을 만듭니다. 이 때, 만들어진 영상은 원래의 영상과 같은 영상입니다.
