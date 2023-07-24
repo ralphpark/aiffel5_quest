@@ -53,3 +53,50 @@ Unpaired data는 비지도 학습에서 사용되어, 데이터의 특성을 발
 
 ## 3-3. 우리가 가진 unpaired data는 무엇이 있을까
 
+![](./img/unpair_07.png)
+- 코믹 필터라고 해서 자기가 찍은 영상을 애니메이션으로 바꿔주는 필터
+- 지금까지 만들어진 애니메이션 데이터와 수많은 사람들 동영상 데이터, 이 각각의 그룹의 데이터를 가지고 언페어드 데이터로 만들어볼 수 있음
+- 일반 사람의 동영상을 이런 애니메이션 영상으로 바꿔주는 것도 언페어드 데이터의 대표적인 예시  
+
+Q. 구할 수 있는 unpaired data는 무엇이 있을까요?
+Unpaired data는 대개 일정한 레이블이 없는 데이터의 모음입니다. 이러한 데이터의 예를 아래에 나열해 보았습니다.
+
+1. 이미지 데이터 : 이미지 데이터는 입력 이미지와 해당 이미지에 대한 레이블(정답)이 짝을 이루지 않은 경우가 많습니다. 같은 카테고리의 이미지들이 서로 묶이지 않은 경우도 많으며 이러한 데이터는 비지도 학습을 위한 GAN, VAE 등의 모델에서 사용됩니다.
+
+2. 음성 데이터 : 음성 데이터는 주로 일정한 녹음환경에서 매우 많은 시간에 걸쳐 담긴 대량의 오디오 데이터 모음입니다. 여기에는 대부분의 경우 정확한 레이블(정답)이 없기 때문에 이를 분석하고 분류하기 위해 정교한 신경망 모델을 사용할 수 있으며 이로 인해 인공지능이 음성 인식 및 이를 기반으로 한 태스크 처리에 대한 성능이 점차 개선되고 있습니다.
+
+3. 텍스트 데이터 : 텍스트 데이터를 처리할 때 짝지어진 데이터를 사용할 수 있지만, 대부분의 경우 이러한 데이터의 레이블(정답)은 수동으로 작성해야하는데, 이는 많은 비용과 시간이 필요합니다. 따라서 비지도 학습에 사용될 여러 텍스트 데이터가 많이 발견되고 있습니다.
+
+4. 센서 데이터 : 설문조사, 공공데이터, IoT 디바이스와 같은 일상적인 측정 센서도 비정형성과 레이블의 부재로 인해 unpaired data로 분류됩니다. 이는 온도, 습도, 건강 데이터, 시간 데이터, 풍속 데이터 등 다양한 종류가 있으며, 이를 노이즈 제거 및 클러스터링 등으로 데이터와 추론 모델을 학습 및 구축할 수 있습니다. 
+
+이러한 unpaired data들은 이전에는 유용하게 사용되지 않았습니다. 하지만 최근 들어 새로운 모델과 테크닉이 등장하면서, 이러한 데이터를 활용해 인공지능 기술의 발전을 이루고 있습니다.
+
+## 3-4. U-GAT-IT을 이용한 애니메이션 프사 만들기
+'''
+import matplotlib.image as img
+import matplotlib.pyplot as plt 
+import os, random
+
+def show_n_images_from_dir(dir_path, n, shuffle=True):
+    file_list = os.listdir(dir_path)
+    if shuffle:
+        random.shuffle(file_list)
+        
+    plt.figure(figsize=(15, 5))
+
+    for idx, file in enumerate(file_list):
+        if idx >= n: break
+        img_path = os.path.join(dir_path, file)
+        plt.subplot(1,n,idx+1)
+        plt.title(file)
+        plt.imshow(img.imread(img_path))
+
+# 실제 인물 예제
+img_dir_A = os.path.join('dataset', 'selfie2anime', 'trainA')
+show_n_images_from_dir(img_dir_A, 5)
+
+# 애니메이션 캐릭터 예제
+img_dir_B = os.path.join('dataset', 'selfie2anime', 'trainB')
+show_n_images_from_dir(img_dir_B, 5)
+'''
+![](./img/unpair_08.png)
