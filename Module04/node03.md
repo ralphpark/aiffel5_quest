@@ -72,11 +72,11 @@ Unpaired data는 대개 일정한 레이블이 없는 데이터의 모음입니�
 이러한 unpaired data들은 이전에는 유용하게 사용되지 않았습니다. 하지만 최근 들어 새로운 모델과 테크닉이 등장하면서, 이러한 데이터를 활용해 인공지능 기술의 발전을 이루고 있습니다.
 
 ## 3-4. U-GAT-IT을 이용한 애니메이션 프사 만들기
-
+```python
 import matplotlib.image as img
 import matplotlib.pyplot as plt 
 import os, random
-```
+
 def show_n_images_from_dir(dir_path, n, shuffle=True):
     file_list = os.listdir(dir_path)
     if shuffle:
@@ -91,11 +91,11 @@ def show_n_images_from_dir(dir_path, n, shuffle=True):
         plt.title(file)
         plt.imshow(img.imread(img_path))
 
-#실제 인물 예제
+# 실제 인물 예제
 img_dir_A = os.path.join('dataset', 'selfie2anime', 'trainA')
 show_n_images_from_dir(img_dir_A, 5)
 
-#애니메이션 캐릭터 예제
+# 애니메이션 캐릭터 예제
 img_dir_B = os.path.join('dataset', 'selfie2anime', 'trainB')
 show_n_images_from_dir(img_dir_B, 5)
 ```
