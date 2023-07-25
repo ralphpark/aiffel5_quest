@@ -106,7 +106,7 @@ multiple_flatten_out = tf.keras.layers.Flatten()(multiple_conv_out)
 print("16개 필터 Convolution 결과 이미지 데이터 수:", multiple_flatten_out.shape)
 
 ```
-```mermaid
+```
 입력 이미지 데이터: (1, 1920, 1080, 3)
 이미지 데이터 값 개수:  (1, 6220800)
 
