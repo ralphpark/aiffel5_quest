@@ -61,15 +61,22 @@ LSTM을 이해하자!
 - 얼마만큼 forget하고 얼마만큼 input을 받아들일 것인지는 또 다른 Neural Network를 통해 학습시킨다.
 ![img_19.png](img_19.png)
 - i와 f는 사실 g값을 제외하면 RNN과 동일한 구조
-- sigmoid 함수는 vanishing gradient problem에 취약하여 별로 좋지 않지만 0에서 1사이의 값을 가지기 때문에 forget gate와 input gate를 만들기에 적합하다.
-![img_20.png](img_20.png)
-- LSTM에서는 ht의 평균값 Ct를 사용한다.
-![img_21.png](img_21.png)
-- 평균을 구한뒤 한번 더 output gate를 통과시켜서 최종적인 출력값을 만들어 낸다.
-![img_22.png](img_22.png)
+- sigmoid 함수는 vanishing gradient problem에 취약하여 별로 좋지 않지만 0에서 1사이의 값을 가지기 때문에 forget gate와 input gate를 만들기에 적합하다.  
+
+![img_20.png](img_20.png)  
+
+- LSTM에서는 ht의 평균값 Ct를 사용한다.  
+
+![img_21.png](img_21.png)  
+
+- 평균을 구한뒤 한번 더 output gate를 통과시켜서 최종적인 출력값을 만들어 낸다.  
+
+![img_22.png](img_22.png)  
+
 - 최종 메모리 출력은 평균값에 Non-linear activation 값을 곱하고 output gate를 곱해서 최종 메모리 값으로 사용
 
-![img_23.png](img_23.png)
+![img_23.png](img_23.png)  
+
 - Ct를 만들기 위해 ht가 덧셈의 형태로 영향을 미치기 때문에 기존 곱셈으로 이루어진 일반적인 RNN보다 더욱 더 미분값이 0에 가까워지는 문제를 해결할 수 있다.
 
 Q. LSTM의 Input Gate와 Forget Gate에서는 왜 relu를 쓰지 않고 sigmoid activation function을 사용할까요?
