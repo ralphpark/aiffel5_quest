@@ -9,8 +9,11 @@
   - 4칙연산이 있었듯 Convolution은 5칙연산이라 생각하면 됨
   - [2 3]*[1 1] = [2 5 3]
 Q. Convolution은 +, x, shift의 조합으로 된 복잡한 연산입니다. [1 2 3] * [1 1 1]의 값은 무엇인가요?
-- [1 2 3] * [1 1 1] = [1 3 6 5 3]
+- [1 2 3] * [1 1 1] = [1 3 6 5 3]  
+
+![](./img/con_01.png)  
 
 ## 6-2. 영상에서의 convolution_mask 이해하기
-- 영상에서의 convolution_mask는 어떻게 적용되는가?
-![](./img/con_01.png)
+- 영상에서의 convolution_mask는 어떻게 적용되는가?  
+
+![](./img/con_02.png)
