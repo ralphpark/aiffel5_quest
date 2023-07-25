@@ -62,6 +62,7 @@ Supervised Learning(지도학습)
 
 - 정답이 주워진다
 - 비교적 문제풀이가 쉽다
+- ex) 분류(classification), 회귀(regression), 객체탐지(object detection)
 
 Unsupervised Learning(비지도학습)  
 
@@ -70,6 +71,7 @@ Unsupervised Learning(비지도학습)
 - 특별한 조건이 있을때 정답이 주어질 수 있다  
 - 기본적으로 문제풀이가 어렵다  
 - 내 안에 정답이 있다  
+- 분류(classification), 회귀(regression), 객체탐지(object detection)
 
 Reinforcement Learning(강화학습)
 
@@ -78,3 +80,4 @@ Reinforcement Learning(강화학습)
 - ex) 슈퍼마리오 게임 - 버섯돌이가 어디로 가고 있는지 내가 지금 어떻게 뛰고 있는지 이런 정보들을 보고 나서 
 - 점프를 할지, 가만히 있을지, 앞으로 갈지 이런 것들을 인공지능 에이전트가 스스로 결정을 함.
 - 그렇게 하다 보면 버섯돌이도 잡고 가서 마지막에 깃발을 먹고 깨는 인공지능 알고리즘을 만들어낼 수가 있음.
+- 게임, 제어, 로봇 개발
