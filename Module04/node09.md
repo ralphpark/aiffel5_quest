@@ -79,3 +79,5 @@ Relu 함수는 값의 범위가 0 이상인 값이기 때문에 forget gate와 i
 
 Q. LSTM이 vanishing gradient problem에 강한 이유는 무엇인가요?
 - Ct를 만들기 위해 ht가 덧셈의 형태로 영향을 미치기 때문에 기존 곱셈으로 이루어진 일반적인 RNN보다 더욱 더 미분값이 0에 가까워지는 문제를 해결할 수 있다.
+
+-end-
