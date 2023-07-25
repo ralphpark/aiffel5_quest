@@ -124,4 +124,4 @@ print("16개 필터 Convolution 결과 이미지 데이터 수:", multiple_flatt
 ```
 - Convolution layer의 weight가 필터의 개수에 따라서도 달라지고, 입력 이미지의 채널에 따라서도 달라진다는 점
 
-![img_2.png](img_2.png)
+![](./img/con_08.png)
