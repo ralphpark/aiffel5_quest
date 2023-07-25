@@ -81,7 +81,8 @@ LSTM을 이해하자!
 
 Q. LSTM의 Input Gate와 Forget Gate에서는 왜 relu를 쓰지 않고 sigmoid activation function을 사용할까요?
 α와 1-α 가 0과 1 사이의 값 이여야 한다는 사실을 만족 시키기 위해서 입니다. sigmoid함수의 출력은 항상 0과1사이의 값을 가지기 때문에 이를 만족시킵니다.
-Relu 함수는 값의 범위가 0 이상인 값이기 때문에 forget gate와 input gate가 판단해야 하는 정보의 중요도와는 별개로 곧바로 1의 값을 가지는 문제점이 있습니다. 
+Relu 함수는 값의 범위가 0 이상인 값이기 때문에 forget gate와 input gate가 판단해야 하는 정보의 중요도와는 별개로 곧바로 1의 값을 가지는 문제점이 있습니다.  
+
 **relu 함수란? : relu 함수는 입력값이 0보다 작으면 0을 출력하고 0보다 크면 입력값을 그대로 출력하는 함수입니다.**
 
 Q. LSTM이 vanishing gradient problem에 강한 이유는 무엇인가요?
