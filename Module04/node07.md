@@ -132,5 +132,33 @@ print("16개 필터 Convolution 결과 이미지 데이터 수:", multiple_flatt
 - Max pooling에 일반적으로 적용되는 stride는 Max pooling을 적용하는 간격을 의미합니다.
 ![img_3.png](img_3.png)
 - max poolling도 한 칸씩 이동하며 적용할 수 있고, 두 칸씩 이동하며 적용할 수 있음
-![img_4.png](img_4.png)
-- 
+![](./img/con_09.png)
+- max pooling은 그 크기와 stride가 같도록 설정. 2 x 2 max pooling은 stride를 2로 하고, 3 x 3 max pooling은 stride를 3으로 하는 식
+- 겹쳐서 pooling하지 않도록 함. pooling 크기와 stride에 따라서 결과의 크기가 달라짐. 2 x 2 max pooling 을 2 stride로 적용하면 가로와 세로가 각각 절반이 되며 면적으로는 1/4이 됨
+
+```python
+# 1장 x 가로 1920 픽셀 x 세로 1080 픽셀 x 3채널(빨, 초, 파)
+pic = tf.zeros((1, 1920, 1080, 3))
+print("입력 이미지 데이터:", pic.shape)
+print('\n')
+
+conv_layer = tf.keras.layers.Conv2D(filters=16, # 16개 필터
+                                    kernel_size=(5, 5),    # 5 x 5 크기
+                                    use_bias=False)    # bias에 대해서는 여기서는 설명하지 않습니다.
+conv_out = conv_layer(pic)
+print("16개 필터 Convolution 결과 데이터:", conv_out.shape)
+print('\n')
+
+pool_layer = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2))
+pool_out = pool_layer(conv_out)
+print("Pooling 결과 데이터:", pool_out.shape)
+```
+```
+입력 이미지 데이터: (1, 1920, 1080, 3)
+
+16개 필터 Convolution 결과 데이터: (1, 1916, 1076, 16)
+
+Pooling 결과 데이터: (1, 958, 538, 16)
+```
+
+## 7-8. Finally, CNN 마무리!
