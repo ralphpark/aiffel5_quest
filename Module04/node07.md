@@ -125,3 +125,12 @@ print("16개 필터 Convolution 결과 이미지 데이터 수:", multiple_flatt
 - Convolution layer의 weight가 필터의 개수에 따라서도 달라지고, 입력 이미지의 채널에 따라서도 달라진다는 점
 
 ![](./img/con_08.png)
+
+## 7-7. Convolution 레이어 구조 살펴보기 (2)
+- Max pooling에 stride를 적용해 보자
+- Convolution과 함께 max pooling을 적용
+- Max pooling에 일반적으로 적용되는 stride는 Max pooling을 적용하는 간격을 의미합니다.
+![img_3.png](img_3.png)
+- max poolling도 한 칸씩 이동하며 적용할 수 있고, 두 칸씩 이동하며 적용할 수 있음
+![img_4.png](img_4.png)
+- 
