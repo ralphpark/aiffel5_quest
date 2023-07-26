@@ -19,8 +19,8 @@ Q. 서로 다른 크기의 feature를 추출하려면 어떻게 하면 되나요
 - 영상 사이즈를 점점 작게 만드는 방법은 Max Pooling을 사용한다.
 - Max Pooling은 영상의 사이즈를 줄이는 방법 중 하나이다.
 - 가장 큰 값 하나만 내버려두고 나머지를 버린다
-- Averge Pooling을 사용하기도 하지만 일반적으로 Max Pooling을 가장 많이 사용하는데 Vanishing gradient 에서 학습량 = 미분값 * 출력값
-- Max값을 출력값으로 사용하면 미분값이 1이 되어 학습량이 커지기 때문이다.
+- Averge Pooling을 사용하기도 하지만 일반적으로 Max Pooling을 가장 많이 사용하는데 Vanishing gradient 에서 학습량 = 미분값 * 출력값임.이값이 너무 작으면 학습이 잘 안됨
+- Max값을 출력값으로 사용하면 학습량이 커지기 때문이다. 중간중간 작게 만들면 훨씬 더 큰 feature를 추출할 수 있다.
 - CNN에서는 Convolution Layer와 Max Pooling Layer를 반복적으로 쌓는다.
 ** Vanishing gradient?
 - 깊은 인공 신경망을 학습하다보면 역전파 과정에서 입력층으로 갈 수록 기울기(Gradient)가 점차적으로 작아지는 현상이 발생할 수 있습니다. 입력층에 가까운 층들에서 가중치들이 업데이트가 제대로 되지 않으면 결국 최적의 모델을 찾을 수 없게 됩니다. 이를 기울기 소실(Gradient Vanishing) 이라고 합니다.
