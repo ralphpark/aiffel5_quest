@@ -7,16 +7,25 @@ from PIL import Image
 import pickle
 from common.functions import sigmoid, softmax
 
-(x_train, t_train), (x_test, t_test) = \
-    load_mnist(normalize=False, one_hot_label=True)
-print(x_train.shape) #(60000, 784)
-print(t_train.shape) #(60000, 10)
 
-train_size = x_train.shape[0]
-batch_size = 10
-batch_mask = np.random.choice(train_size, batch_size)
-x_batch = x_train[batch_mask]
-t_batch = t_train[batch_mask]
 
-print(np.random.choice(60000, 10))
-print(t_batch)
+def function_2(x):
+    return x[0]**2 + x[1]**2
+
+def numerical_gradient(f, x):
+    h=1e-4
+    grad = np.zeros_like(x) # x와 형상이 같은 배열을 생성
+
+    for idx in range(x.size):
+        tmp_val = x[idx]
+
+        #f(x+h) 계산
+        x[idx] = tmp_val + h
+        fxh1 = f(x)
+
+        #f(x-h) 계산
+        x[idx] = tmp_val - h
+        fxh2 = f(x)
+
+        grad[idx] = (fxh1 - fxh2) / (2*h)
+        x[idx] = tmp_val #값 복원
