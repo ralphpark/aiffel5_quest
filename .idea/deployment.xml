@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@8.tcp.ngrok.io:18093 password" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="root@0.tcp.ngrok.io:13105 password">
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/pycharm_project_649" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@4.tcp.ngrok.io:12301 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_261" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@8.tcp.ngrok.io:18093 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_487" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
