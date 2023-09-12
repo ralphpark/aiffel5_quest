@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7345bd23-8565-4ae6-87bf-678d476a6461" name="Changes" comment="Changes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UH1E5uYY8RVq5JB43iqnIDsHmT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ralphpark/PycharmProjects/aiffel5_quest/Flutter&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Dart 명령줄 앱.test.dart">
+    <configuration name="dart_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/todo/lib/dart_test.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/todo" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/todo/myfirst/lib/main.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/todo" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/todo/bin/test.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/todo" />
+      <method v="2" />
+    </configuration>
+    <configuration name="todo.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/todo/bin/todo.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/todo" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bin/index.html" type="DartWebdevConfigurationType" factoryName="Dart Web" temporary="true" nameIsGenerated="true">
+      <option name="htmlFilePath" value="$PROJECT_DIR$/todo/bin/index.html" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/todo/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Dart 명령줄 앱.main.dart" />
+      <item itemvalue="Dart 명령줄 앱.todo.dart" />
+      <item itemvalue="Dart 명령줄 앱.test.dart" />
+      <item itemvalue="Dart 명령줄 앱.dart_test.dart" />
+      <item itemvalue="Dart 웹.bin/index.html" />
+      <item itemvalue="Flutter.main.dart" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart 명령줄 앱.test.dart" />
+        <item itemvalue="Dart 웹.bin/index.html" />
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Dart 명령줄 앱.dart_test.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7345bd23-8565-4ae6-87bf-678d476a6461" name="Changes" comment="" />
+      <created>1692581579028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692581579028</updated>
+      <workItem from="1692581580303" duration="69000" />
+      <workItem from="1692581736209" duration="1051000" />
+      <workItem from="1692583926920" duration="7636000" />
+      <workItem from="1692595239586" duration="14000" />
+      <workItem from="1692595265783" duration="5818000" />
+      <workItem from="1692624617151" duration="11993000" />
+      <workItem from="1692665241550" duration="12766000" />
+      <workItem from="1692689497942" duration="1428000" />
+      <workItem from="1692709373222" duration="5480000" />
+      <workItem from="1692750190130" duration="8825000" />
+      <workItem from="1692777473734" duration="3699000" />
+      <workItem from="1692795098389" duration="1093000" />
+      <workItem from="1692891617371" duration="704000" />
+      <workItem from="1692925774521" duration="1118000" />
+      <workItem from="1692965600154" duration="8000" />
+      <workItem from="1692965620038" duration="4026000" />
+      <workItem from="1693192514762" duration="766000" />
+      <workItem from="1694482618135" duration="2109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
