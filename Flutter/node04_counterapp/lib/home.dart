@@ -1,42 +1,68 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
+/// Flutter code sample for [TextField].
+void main() => runApp(const TextFieldExampleApp());
 
-class _HomePageState extends State < HomePage > {
-  void initState() {
-    super.initState();
-  }
+class TextFieldExampleApp extends StatelessWidget {
+  const TextFieldExampleApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    int _counter = 0;
+    return const MaterialApp(
+      home: TextFieldExample(),
+    );
+  }
+}
+
+class TextFieldExample extends StatefulWidget {
+  const TextFieldExample({super.key});
+
+  @override
+  State<TextFieldExample> createState() => _TextFieldExampleState();
+}
+
+class _TextFieldExampleState extends State<TextFieldExample> {
+  late TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter State Counter"),
-      ),
       body: Center(
-        child: AnimatedTextKit(
-          totalRepeatCount: 1,
-          animatedTexts: [
-            TypewriterAnimatedText(
-              'Counter is now : $_counter',
-              textStyle: TextStyle(fontSize: 60.0,),
-              speed: Duration(milliseconds: 100),
-            ),
-          ],
-          repeatForever: true,
+        child: TextField(
+          controller: _controller,
+          onSubmitted: (String value) async {
+            await showDialog<void>(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: const Text('Thanks!'),
+                  content: Text(
+                      'You typed "$value", which has length ${value.characters.length}.'),
+                  actions: <Widget>[
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('OK'),
+                    ),
+                  ],
+                );
+              },
+            );
+          },
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            _counter++;
-          });
-        },
-        child: Icon(Icons.add),
       ),
     );
   }
