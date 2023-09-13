@@ -639,3 +639,50 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ---
 [영상 1] Firebase란?
+
+![](img04/29.png)
+
+![](img04/30.png)
+
+![](img04/31.png)
+
+![](img04/32.png)
+
+![](img04/33.png)
+
+Firebase는 Google에서 제공하는 서버리스(Serverless) 개발 서비스입니다. 서버리스 개념은 개발자가 서버 인프라 관리에 대한 부담을 덜고 애플리케이션 개발에 집중할 수 있도록 하는 접근 방식입니다. Firebase는 사용자 인증, 데이터베이스, 스토리지, 호스팅, 푸시 알림 등 다양한 기능을 제공하여 개발자가 애플리케이션을 빠르고 간편하게 구축하고 운영할 수 있도록 도와줍니다. Firebase는 클라우드 기반으로 작동하며, 개발자는 인프라 관리에 대한 부담을 덜고 애플리케이션 개발에 집중할 수 있도록 돕습니다.
+
+---
+[영상 2] Firebase 콘솔 프로젝트 추가
+
+firebase 접속 후 프로젝트 생성, Firestore Database 추가
+
+데이버 베이스 만들기 > 테스트모드에서 시 > 서울 사용설정
+
+컬렉션 시작 > ID 자동완성 > 저
+
+---
+[실습 2] Firebase 콘솔 프로젝트 추가
+
+1. Firebase 온라인 세팅
+2. Firebase 사이트 접속 - 구글 로그인
+3. 콘솔로 이동
+4. ToDo 프로젝트 만들기 (약 2분소요)
+5. Firestore Database만들기 - 테스트모드
+6. Cloud Firestore 위치 - Seoul
+7. 컬렉션 시작 - 자동ID생성
+
+Firebase 요금제
+ - Firebase 요금제는 무료 요금제와 종량제 요금제가 있습니다. 본 강의에서는 무료 요금제를 활용할 예정이오니 설정하실 때 주의하시기바랍니다. Firebase 요금제에 대하여 자세히 알아보고 싶으시다면, Firebase 요금제사이트에서 확인해보세요.
+
+---
+[영상 3] Firebase 콘솔세팅 1
+
+Authentication > 시작하기 > 이메일/비밀번호 > 사용 설정 > 저장
+
+FireStore Database 더 최신의 데이터 베이스이다.
+
+* Cloud Firestore 위치는 변경이 불가능합니다. 최초 설정하실 때 유의하시길 바랍니다.
+
+Realtime Database - 구버전
+
