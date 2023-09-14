@@ -7,7 +7,6 @@
     <list default="true" id="9087ca5a-d123-4203-9f93-df608f2a1fa5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Flutter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flutter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node03.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Node03.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ralphpark/PycharmProjects/aiffel5_quest/exploration&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,6 +64,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="exploration01" />
@@ -115,7 +120,13 @@
       <workItem from="1694583454460" duration="1327000" />
       <workItem from="1694584801073" duration="2605000" />
       <workItem from="1694587431525" duration="9742000" />
-      <workItem from="1694610431557" duration="4760000" />
+      <workItem from="1694610431557" duration="13031000" />
+      <workItem from="1694629903563" duration="1352000" />
+      <workItem from="1694631262580" duration="34000" />
+      <workItem from="1694631371607" duration="1320000" />
+      <workItem from="1694632810711" duration="2940000" />
+      <workItem from="1694635788727" duration="401000" />
+      <workItem from="1694636209728" duration="645000" />
     </task>
     <servers />
   </component>
