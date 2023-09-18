@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9087ca5a-d123-4203-9f93-df608f2a1fa5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Flutter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flutter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,6 +127,8 @@
       <workItem from="1694632810711" duration="2940000" />
       <workItem from="1694635788727" duration="401000" />
       <workItem from="1694636209728" duration="645000" />
+      <workItem from="1695021363141" duration="264000" />
+      <workItem from="1695021688933" duration="1683000" />
     </task>
     <servers />
   </component>
